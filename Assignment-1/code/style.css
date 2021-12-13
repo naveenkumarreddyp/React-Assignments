@@ -1,82 +1,73 @@
-*{
+
+body{
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(216, 211, 211);
 }
-body{
-    width:100%;
-    height:100%;
-}
+#root {
+    height: 100%;
+    width: 100%;
+    margin: 5%;
+    border: 2px solid black;
+    box-shadow: border;
+    background-color: white;
+  }
 .yellow{
     display:flex;
-    width:100%;
-    height:300px;
-    justify-content: space-around;
-    margin-top: 20px;
-    flex-direction: row;
+    margin: 20px;
 }
-.yellow .yellow1{
+.yellow1{
     background-color: yellow;
+    justify-content: space-around;
     margin: 20px;
     width:100%;
-    height:100%;
+    height:250px;
 }
 .red{
     background-color: red;
-    height: 300px;
-    width: 100%;
-    margin-top:50px;
-    margin-left: 20px;
+    height: 250px;
+    margin:35px;
 }
 .blue{
     display:flex;
-    width:100%;
-    height:300px;
-    justify-content: space-around;
-    margin-top: 20px;
-    flex-direction: row;
+    margin: 20px;
 }
-.blue .blue1{
+.blue1{
     background-color: blue;
+    justify-content: space-around;
     margin: 20px;
     width:100%;
-    height:100%;
+    height:250px;
 }
-@media (max-width:320px) {
+
+@media screen and (max-width:320px) {
     .yellow{
-        display:flex;
         flex-direction: column;
-        height:250px;
-        width:100%;
     }
     .yellow1{
-        height:230px;
-        width:100%;
-        margin: 20px;
-        padding-right: 50px;
+        height:100px;
+        width:85%;
     }
     .blue{
-        display:flex;
         flex-direction: column;
-        height:250px;
-        width:100%;
     }
     .blue1{
-        width:100%;
-        margin: 20px;
-        padding-right: 50px;
+        height:100px;
+        width:85%;
     }
 }
-@media (max-width:768px){
+
+@media (min-width:320px) and (max-width:768px){
     .blue{
-        display:flex;
         flex-direction: column;
-        height:250px;
-        width:100%;
     }
     .blue1{
-        width:100%;
-        margin: 20px;
-        padding-right: 50px;
+        height:100px;
+        width:93%;
     }
 }
