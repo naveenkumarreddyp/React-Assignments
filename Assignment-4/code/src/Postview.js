@@ -8,7 +8,6 @@ import share from './images/send.png';
 
 
 const Postview=()=> {
-  // debugger
   const [users,userData]=useState([])
   useEffect(()=>{
     fetch("http://localhost:3000/userData")
