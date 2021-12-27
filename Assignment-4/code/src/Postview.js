@@ -8,16 +8,12 @@ import share from './images/send.png';
 
 
 const Postview=()=> {
-  const [users, userData] = useState();
-
-  useEffect(() => {
-   getData();
-    async function getData() {
-      const response = await fetch('http://localhost:8000/userData');
-      const data = await response.json();
-      userData(data);
-    }
-  }, [])
+  // debugger
+  const [users,userData]=useState([])
+  useEffect(()=>{
+    fetch("http://localhost:3000/userData")
+    .then(response=>userData(response.data))
+  },[])
 
   return (
     <div className="site-container">
