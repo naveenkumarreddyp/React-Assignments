@@ -9,19 +9,12 @@ import share from './images/send.png';
 
 const Postview=()=> {
   const [users, userData] = useState();
-  // const [users,userData]=useState([])
-  // useEffect(()=>{
-  //   fetch("http://localhost:3000/userData")
-  //   .then(response=>userData(response.data))
-  // },[])
 
   useEffect(() => {
    getData();
     async function getData() {
-      const response = await fetch('http://localhost:3000/userData');
+      const response = await fetch('http://localhost:8000/userData');
       const data = await response.json();
-      // jest.setTimeout(30000)
-
       userData(data);
     }
   }, [])
