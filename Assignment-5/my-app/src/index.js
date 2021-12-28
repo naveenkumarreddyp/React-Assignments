@@ -10,7 +10,7 @@ ReactDOM.render(
   <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/Home' element={<Homepage />} />
+          <Route path='/' element={<Homepage />} />
         </Routes>
         <Routes>
           <Route path='/Postview' element={<Postview />} />

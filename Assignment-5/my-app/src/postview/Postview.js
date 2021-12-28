@@ -9,7 +9,7 @@ import share from '../images/send.png';
 const Postview=()=> {
   const [users,userData]=useState([])
   const getApiData = async () =>{
-    const UrL = 'http://localhost:3000/data'
+    const UrL = 'http://localhost:3060/data'
     let response = await fetch(UrL)
     let users = await response.json()
     userData(users)
