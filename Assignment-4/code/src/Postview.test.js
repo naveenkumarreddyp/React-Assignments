@@ -15,8 +15,9 @@ describe('<Postview />', () => {
     // is sunny.
     nock('http://localhost:3004/data')
       .get('')
-      .reply(200, {
+      .reply(2000, {
            data: '',
+           
       });
   });
   it('Component fetching from API', async (done) => {

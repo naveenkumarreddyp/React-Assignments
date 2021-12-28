@@ -1,0 +1,96 @@
+.header{
+  height: 50px;
+  background-color: rgb(194, 191, 191);
+}
+.heading{
+  height:50px;
+  display: flex;
+  border-bottom: 2px;
+  border-top: 1px;
+  border-style: solid;
+  border-color: black;
+}
+.icon{
+  height:30px;
+  width:30px;
+  margin-left: 200px;
+  margin-top: 10px;
+}
+.heading>h1{
+  margin-left: 5px;
+  margin-top: 0px;
+  color: green;
+}
+.camera{
+  margin-left: 45%;
+  height: 20px;
+  width: 20px;
+  margin-top: 15px;
+}
+.post{
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 10px;
+  height:20%;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+
+}
+.top{
+  display: flex;
+  margin: 5px;
+}
+.dots{
+  position: absolute;
+  margin-left: 27%;
+  margin-top: -10px;
+  font-size: 30px;
+}
+.name{
+  font-size: 15px;
+  font-weight: bolder;
+  margin-left: 5px;
+}
+.location{
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.postimage{
+  height:250px;
+  width:100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bottom{
+  margin:5px;
+}
+.like, .share{
+  height:15px;
+  width:15px;
+  margin-left: 10px;
+}
+.date{
+  margin-left:70%;
+  font-weight: 500;
+  font-size: 12px;
+
+}
+.buttons{
+  display:flex;
+  flex-direction: row;
+}
+.likes{
+  font-weight: 300;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.description{
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
